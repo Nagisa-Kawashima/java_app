@@ -1,7 +1,5 @@
 package jp.co.planaria.sample.motocatalog.controllers;
 
-import java.security.KeyStore.Entry.Attribute;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
