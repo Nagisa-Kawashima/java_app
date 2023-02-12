@@ -1,0 +1,15 @@
+package jp.co.planaria.sample.motocatalog.bean;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Brand {
+    public Brand(int i, String brandName) {
+    }
+    private String brandId;
+    private String brandName;
+}
