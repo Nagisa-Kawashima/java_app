@@ -1,0 +1,25 @@
+; ---------------
+#### モーターサイクルマスタ(m_motorcycle)
+
+; |No.|論理名|物理名|データ型(桁)|Not Null|Primary|
+; |--:|---|---|---|:-:|:-:|
+バイク番号moto_no
+バイク名moto_name
+シート高seat_height
+シリンダーcylinder
+冷却cooling
+価格price
+コメントcomment
+ブランドbrand_id
+バージョンversion
+登録日時ins_dt
+更新日時upd_dt
+ブランドbrand_id
+ブランド名brand_name
+
+
+#### ブランドマスタ(m_brand)
+
+; |No.|論理名|物理名|データ型(桁)|Not Null|Primary|
+; |--:|---|---|---|:-:|:-:|
+; ---------------

@@ -42,10 +42,10 @@
               id="brand"
               aria-label="Default select example"
             >
-              <option selected>Honda</option>
-              <option value="1">Kawasaki</option>
+              <option th:each= "brand: ${brands}" th:text="${brand.brandName}" th:value="${brand.brandId}">Honda</option>
+              <!-- <option value="1">Kawasaki</option>
               <option value="2">Yamada</option>
-              <option value="3">Suzuki</option>
+              <option value="3">Suzuki</option> -->
             </select>
             <!-- <input type="email" class="form-control" id="exampleFormControlInput1" /> -->
           </div>
@@ -78,13 +78,13 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Kawasaki</td>
-                <td>Z900RS</td>
-                <td>水冷4気筒</td>
-                <td>1500000000</td>
-                <td>かっこいい</td>
+              <tr th:each ="moto : ${motos}" th:object ="${moto}">
+                <th scope="row" th:text="*{motoNo}"></th>
+                <td th:text="*{brand.brandName}"></td>
+                <td th:text="*{motoName}"></td>
+                <td th:text="*{cooling} + *{cylinder}"></td>
+                <td th:text="*{price}"></td>
+                <td th:text="*{comment}"></td>
               </tr>
             </tbody>
           </table>
