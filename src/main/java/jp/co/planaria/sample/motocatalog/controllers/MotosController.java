@@ -32,10 +32,12 @@ public class MotosController {
 
         //バイク
         List<Motorcycle> motos = new ArrayList<>();
-        motos.add(new Motorcycle(1, "GB350", 800, 1, "空冷", 500000, "いい音", new Brand(01, "HONDA"), 1, null, null ));
+        motos.add(new Motorcycle(1, "GB350", 800, 1, "空冷", 500000, "いい音", new Brand("01", "HONDA"), 1, null, null ));
         
         
-        motos.add(new Motorcycle(2, "Ninja", 800, 2, "水冷", 10000000, "すいすい", new Brand(02, "KAWASAKI"), 1, null, null ));
+        motos.add(new Motorcycle(2, "Ninja", 800, 2, "水冷", 10000000, "すいすい", new Brand("02", "KAWASAKI"), 1, null, null ));
+
+        motos.add(new Motorcycle(3, "Z900RS CAFE", 820, 4, "水冷", 1380000, "音が良い", new Brand("03", "YAMAHA"), 1, null, null ));
 
         model.addAttribute("brands", brands);
         model.addAttribute("motos", motos);
