@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-// import lombok.NoArgsConstructor;
+import lombok.NoArgsConstructor;
 
 
 @Data
@@ -12,11 +12,7 @@ import lombok.Data;
 // @NoArgsConstructor
 @lombok.NoArgsConstructor
 public class Motorcycle {
-    public Motorcycle(int motoNo, String motoName, int seatHeight, int cylinder, String cooling, int price,
-        String comment, Brand brand, int version, Object insDt, Object updDt) {
-    }
     
-    // }
     // バイク番号
     private Integer motoNo;
     // バイク名
@@ -32,7 +28,7 @@ public class Motorcycle {
     // コメント
     private String comment;
     // ブランド
-    private String brand;
+    private Brand brand;
     // バージョン
     private Integer version;
     // 登録日時
